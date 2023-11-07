@@ -8,10 +8,10 @@ interface HeaderProps {
   children: ReactNode;
 }
 
-const Header = ({ image: { src, alt }, children }: HeaderProps) => {
+const Header = ({ image, children }: HeaderProps) => {
   return (
     <div>
-      <img src={src} alt={alt} />
+      <img {...image} />
       {children}
     </div>
   );
