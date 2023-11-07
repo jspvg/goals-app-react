@@ -1,8 +1,8 @@
-import { CourseGoal } from "../types/types";
+import { Goal as CGoal} from "../types/types";
 import Goal from "./Goal";
 
 interface GoalListProps {
-  goals: CourseGoal[];
+  goals: CGoal[];
 }
 
 const GoalList = ({ goals }: GoalListProps) => {

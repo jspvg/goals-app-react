@@ -2,14 +2,14 @@ import goalsImage from "./assets/goals.jpg";
 import Header from "./components/Header";
 import { useState } from "react";
 import GoalList from "./components/GoalList";
-import { CourseGoal } from "./types/types";
+import { Goal } from "./types/types";
 
 export default function App() {
-  const [goals, setGoals] = useState<CourseGoal[]>([]);
+  const [goals, setGoals] = useState<Goal[]>([]);
 
   const handleAddGoal = () => {
     setGoals((prevGoals) => {
-      const newGoal: CourseGoal = {
+      const newGoal: Goal = {
         id: Math.random(),
         title: "Learn React + TS",
         description: "Learn it in depth!",

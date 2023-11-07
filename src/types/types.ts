@@ -1,4 +1,4 @@
-export type CourseGoal = {
+export type Goal = {
   title: string;
   description: string;
   id: number;
