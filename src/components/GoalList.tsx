@@ -16,9 +16,9 @@ const GoalList = ({ goals, onDeleteGoal }: GoalListProps) => {
   }
 
   let warningBox: ReactNode;
-  if (goals.length >= 4) {
+  if (goals.length >= 8) {
     warningBox = (
-      <InfoBox mode="warning">
+      <InfoBox mode="warning" severity="high">
         You're collecting a lot of goals. Don't put too much on your plate!
       </InfoBox>
     );
